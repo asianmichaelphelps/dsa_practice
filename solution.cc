@@ -18,3 +18,15 @@ Output: 1
 
 
 */
+
+
+/* step 3:
+ 
+  pseudocode:
+  create an int variable name bits;
+
+  for each number in the numbers array
+       bits xor each number
+  return bits
+
+ */
