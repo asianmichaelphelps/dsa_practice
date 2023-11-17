@@ -1,0 +1,10 @@
+# Ignore build output
+BUILD/
+build/
+*.o
+*.so
+*.a
+
+# Ignore other unnecessary files
+.DS_Store
+*.swp
