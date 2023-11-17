@@ -13,13 +13,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Update packages
+       run: sudo apt-get update
+
     - name: Install dependencies
-       run: sudo apt-get update && sudo apt-get install -y build-essential cmake
+       run: sudo apt-get install -y build-essential cmake
+
     - name: Configure CMake
-      run: cmake -S . -B BUILD
+       run: cmake -S . -B BUILD
 
     - name: Build
-      run: cmake --build BUILD
+       run: cmake --build BUILD
 
     - name: Test
-      run: ./BUILD/solution_test
+       run: ./BUILD/solution_test
